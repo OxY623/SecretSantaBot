@@ -9,9 +9,15 @@ from supabase import create_client, Client
 # Загружаем переменные окружения
 load_dotenv()
 
-SUPABASE_URL = os.getenv("SUPABASE_URL")
-SUPABASE_KEY = os.getenv("SUPABASE_KEY")  # ⚠️ Лучше использовать service_role key
-TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
+SUPABASE_URL = os.getenv("SUPABASE_URL") | "ttps://wrsnruedmwelkayavffu.supabase.co"
+SUPABASE_KEY = (
+    os.getenv("SUPABASE_KEY")
+    | "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Indyc25ydWVkbXdlbGtheWF2ZmZ1Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc2NDg1MjQ5NiwiZXhwIjoyMDgwNDI4NDk2fQ.SEj3gbXRR0TQ0TsbNagQu2yE1LJScLBmhFyA3ugpIVI"
+)
+# ⚠️ Лучше использовать service_role key
+TELEGRAM_BOT_TOKEN = (
+    os.getenv("TELEGRAM_BOT_TOKEN") | "8385764755:AAHMLr9PX4wtI4XHZewxkt8wyAw9osfPILw"
+)
 
 supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
 
