@@ -8,7 +8,7 @@ from supabase import create_client, Client
 # Загружаем переменные окружения
 
 
-SUPABASE_URL = "ttps://wrsnruedmwelkayavffu.supabase.co"
+SUPABASE_URL = "https://wrsnruedmwelkayavffu.supabase.co"
 SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Indyc25ydWVkbXdlbGtheWF2ZmZ1Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc2NDg1MjQ5NiwiZXhwIjoyMDgwNDI4NDk2fQ.SEj3gbXRR0TQ0TsbNagQu2yE1LJScLBmhFyA3ugpIVI"
 
 # ⚠️ Лучше использовать service_role key
